@@ -4,6 +4,13 @@ Aplicação fullstack que permite realizar a reserva de Spots para empresas e de
 
 ## Instalação
 ### Backend/API
+* Node.js
+* Express
+* Socket.io
+* MongoDB
+* Mongoose
+* Multer
+
 Clone este repositório e instale as dependências dentro da pasta `aircnc/backend`
 ```sh
 git clone https://github.com/rhikson/aircnc.git
@@ -18,6 +25,10 @@ yarn dev
 ```
 > Lembre-se de deixar rodando o backend...
 ### Frontend
+* ReactJS
+* Socket.io
+* Axios
+
 Instale as dependências dentro da pasta `aircnc/frontend`
 > Em um novo terminal execute os comandos:
 ```sh
@@ -31,6 +42,11 @@ npm install
 yarn start
 ```
 ### App Mobile
+* React Native
+* Expo
+* Socket.io
+* Axios
+
 O modo mais fácil de rodar esse aplicativo no **Android** é utilizando o [Expo](https://expo.io/).
 Primeiro instale o `expo-cli` de forma global em sua máquina. 
 Dentro da pasta `aircnc/mobile` instale as dependências do app, em seguida execute o app.
