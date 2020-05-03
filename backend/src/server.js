@@ -20,10 +20,8 @@ mongoose.connect('mongodb+srv://oministack09:oministack09@cluster0-7kyw0.mongodb
 const connectedUsers = {};
 
 io.on('connection', socket => {
-    // console.log('Usuário conectado', socket.id);
     const { user_id } = socket.handshake.query;
-
-    connectedUsers[user_id] = socket.io;
+    connectedUsers[user_id] = socket.id;
 });
 
 //Adiciona uma funcionalidade em todas as rotas
@@ -33,12 +31,6 @@ app.use((req, res, next) => {
     
     return next();
 });
-
-//GET, POST, PUT, DELETE
-
-// req.query = Acessar query params (para filtros)
-// req.params = Acessar route params (para edição, delete)
-// req.body = Acessar corpo da requisição (para criação, edição)
 
 app.use(cors());
 app.use(express.json());
